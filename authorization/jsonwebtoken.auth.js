@@ -12,7 +12,6 @@ module.exports = (req, res, next) => {
         }
         return next();
     } catch (error) {
-        console.log(error);
         if (error instanceof TokenExpiredError) {
             throw new UnauthorizedError('The token has expired');
         }
