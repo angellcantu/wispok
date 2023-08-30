@@ -13,7 +13,7 @@ class AuthorizationsUtil {
         return sign(
             { id: authorization.id },
             this.secret,
-            Object.assign({ algorithm: this.algorithm, expiresIn: '10m' }, options)
+            Object.assign({ algorithm: this.algorithm, expiresIn: '2m' }, options)
         );
     }
 

@@ -1,6 +1,6 @@
 'use strict';
 
-const main = require('./main.routes');
+const main = require('./main.model');
 
 module.exports = {
     main

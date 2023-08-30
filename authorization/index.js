@@ -1,7 +1,13 @@
 'use strict';
 
-const jsonwebtoken = require('./jsonwebtoken.auth');
+const authorizations = {
+    jsonwebtoken: require('./jsonwebtoken.auth')
+};
 
-module.exports = {
-    jsonwebtoken
+module.exports = type => async (req, res, next) => {
+    try {
+        return await authorizations[type](req, res, next);
+    } catch (error) {
+        next(error);
+    }
 };

@@ -1,17 +1,17 @@
 'use strict';
 
-const badRequest = require('./badrequest.error');
-const conflict = require('./conflict.error');
-const forbidden = require('./forbidden.error');
-const notFound = require('./notfound.error');
-const unauthorized = require('./unauthorized.error');
-const unprocessable = require('./unprocessable.error');
+const BadRequestError = require('./badrequest.error');
+const ConflictError = require('./conflict.error');
+const ForbiddenError = require('./forbidden.error');
+const NotFoundError = require('./notfound.error');
+const UnauthorizedError = require('./unauthorized.error');
+const UnprocessableError = require('./unprocessable.error');
 
 module.exports = {
-    badRequest,
-    conflict,
-    forbidden,
-    notFound,
-    unauthorized,
-    unprocessable
+    BadRequestError,
+    ConflictError,
+    ForbiddenError,
+    NotFoundError,
+    UnauthorizedError,
+    UnprocessableError
 };
