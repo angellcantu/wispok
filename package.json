@@ -1,0 +1,40 @@
+{
+  "name": "wispok",
+  "version": "0.0.1",
+  "description": "Wispok by Jose Angel Cantu Alcocer",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./bin/www",
+    "nodemon": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angellcantu/wispok.git"
+  },
+  "keywords": [
+    "npm",
+    "nodejs",
+    "api"
+  ],
+  "author": "Jose Angel Cantu Alcocer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angellcantu/wispok/issues"
+  },
+  "homepage": "https://github.com/angellcantu/wispok#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "supertest": "^6.3.3"
+  }
+}
