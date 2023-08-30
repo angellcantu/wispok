@@ -4,7 +4,7 @@
   "description": "Wispok by Jose Angel Cantu Alcocer",
   "main": "server.js",
   "scripts": {
-    "test": "npm start",
+    "test": "jest",
     "start": "node ./bin/www",
     "nodemon": "nodemon ./bin/www"
   },
@@ -32,5 +32,9 @@
     "jsonwebtoken": "^9.0.1",
     "morgan": "^1.10.0",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "supertest": "^6.3.3"
   }
 }

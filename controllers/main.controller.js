@@ -30,7 +30,7 @@ class MainController {
         try {
             let user = main.login(req.body);
             if (!user) {
-                throw new NotFoundError('User or password are not correct');
+                throw new NotFoundError('User or password are not correct.');
             }
             let token = authorization.createToken(user);
             return res.json({
@@ -46,7 +46,7 @@ class MainController {
         try {
             let user = main.findById(res.locals.auth);
             if (!user) {
-                throw new NotFoundError('The user does not exist');
+                throw new NotFoundError('The user does not exist.');
             }
             return res.json({
                 message: `Hi ${user.username}, the API system is up and running`,
@@ -61,7 +61,7 @@ class MainController {
         try {
             let user = main.findById(res.locals.auth);
             if (!user) {
-                throw new NotFoundError('The user does not exist');
+                throw new NotFoundError('The user does not exist.');
             }
             return res.json({ message: `Bye ${user.username}, your token has been revoked` });
         } catch (error) {
